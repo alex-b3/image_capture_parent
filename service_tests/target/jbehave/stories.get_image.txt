@@ -1,0 +1,9 @@
+
+(stories/get_image.story)
+Scenario: scenario description
+Given Existing Image in DB
+When I am getting image with name first
+Then I am seeing image with name second (FAILED)
+(org.junit.ComparisonFailure: Expected second but got first expected:<[second]> but was:<[first]>)
+
+

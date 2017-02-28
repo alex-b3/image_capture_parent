@@ -2,6 +2,7 @@ package com.controllers;
 
 import com.models.Image;
 import com.models.ImageDao;
+import com.services.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.io.IOException;
 
 /**
  * Created by alex.bichovsky on 2/13/2017.
@@ -23,9 +26,12 @@ public class ImageController {
      */
     @RequestMapping(value = "/capture", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity<Image> create(@RequestBody Image image){
-            imageDao.save(image);
-            return new ResponseEntity<Image>(image, HttpStatus.OK);
+    public ResponseEntity<?> create(@RequestBody Image image) throws IOException {
+            if(imageService.takeImage(image)){
+                imageDao.save(image);
+                return new ResponseEntity<Image>(image, HttpStatus.OK);
+            }
+            return new ResponseEntity<String>("Wrong url for the image was provided!!!", HttpStatus.UNPROCESSABLE_ENTITY);
     }
 
     /**
@@ -41,11 +47,14 @@ public class ImageController {
             imageName = String.valueOf(image.getName());
         }
         catch (Exception ex) {
-            return "User not found";
+            return "Image not found";
         }
         return imageName;
     }
 
     @Autowired
     private ImageDao imageDao;
+
+    @Autowired
+    private ImageService imageService;
 }

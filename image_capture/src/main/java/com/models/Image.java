@@ -9,7 +9,8 @@ import java.util.Date;
  */
 
 @Entity
-@Table(name = "images")
+@Table(name = "images",
+        uniqueConstraints = @UniqueConstraint(columnNames = {"name"}))
 public class Image {
 
     @Id
@@ -19,12 +20,14 @@ public class Image {
     @NotNull
     private String name;
 
-
     @Column(name = "date")
     private Date date = new Date();
 
     @NotNull
     private String url;
+
+    @NotNull
+    private String localPath;
 
     public Image(){}
 
@@ -66,6 +69,14 @@ public class Image {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getLocalPath() {
+        return localPath;
+    }
+
+    public void setLocalPath(String localPath) {
+        this.localPath = localPath;
     }
 
 }

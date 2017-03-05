@@ -1,5 +1,6 @@
 package com.controllers;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.models.Image;
 import com.models.ImageDao;
 import com.services.ImageService;
@@ -21,6 +22,8 @@ import java.io.IOException;
 @Controller
 public class ImageController {
 
+    ObjectMapper mapper = new ObjectMapper();
+
     /**
      * POST /create  --> Create a new user and save it in the database.
      */
@@ -41,15 +44,36 @@ public class ImageController {
     @RequestMapping("/get-by-name")
     @ResponseBody
     public String getByName(String name) {
-        String imageName = "";
+        String jsonInString = null;
         try {
             Image image = imageDao.findByName(name);
-            imageName = String.valueOf(image.getName());
+            if(!image.equals(null)){
+                jsonInString = mapper.writeValueAsString(image);
+            }
         }
         catch (Exception ex) {
             return "Image not found";
         }
-        return imageName;
+        return jsonInString;
+    }
+
+    /**
+     * DELETE /delete  --> Delete image by name
+     */
+
+    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
+    @ResponseBody
+    public String deleteByName(String name) {
+        String imageName = "";
+        try {
+            Image image = imageDao.findByName(name);
+            imageName = image.getName();
+            imageDao.delete(image);
+        }
+        catch (Exception ex) {
+            return "Image not found";
+        }
+        return imageName + " was deleted";
     }
 
     @Autowired

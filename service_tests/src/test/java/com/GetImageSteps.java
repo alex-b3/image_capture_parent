@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 
+import static consts.RequestConsts.*;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -25,8 +26,7 @@ public class GetImageSteps{
 
     @Given("Existing Image in DB with name $name and source url $url")
     public void givenImage(@Named("name") String name, @Named("url") String url) throws IOException {
-        // TODO add class for mapping url
-        imageJsonObj = restTemplate.getForObject("http://localhost:8080/get-by-name?name={name}",String.class, name);
+        imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter,String.class, name);
         if(imageJsonObj.equals("Image not found")){
             createNewImage(name, url);
         }else{
@@ -36,7 +36,7 @@ public class GetImageSteps{
 
     @When("I am getting image with name $name")
     public void gettingImageWithName(@Named("name") String name){
-        imageJsonObj = restTemplate.getForObject("http://localhost:8080/get-by-name?name={name}",String.class, name);
+        imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter,String.class, name);
     }
 
     @Then("I am seeing image with name $name")
@@ -53,14 +53,14 @@ public class GetImageSteps{
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<String> entity = new HttpEntity<>(jsonInString,headers);
-        imageJsonObj = restTemplate.postForObject("http://localhost:8080/capture", entity, String.class);
+        imageJsonObj = restTemplate.postForObject(localHost + capture, entity, String.class);
         image = mapper.readValue(imageJsonObj, Image.class);
     }
 
     @When("I delete image with name $name")
     public void deleteImage(@Named("name")String name){
-        restTemplate.delete("http://localhost:8080/delete?name={name}", name);
-        imageJsonObj = restTemplate.getForObject("http://localhost:8080/get-by-name?name={name}",String.class, name);
+        restTemplate.delete(localHost + delete + nameParameter, name);
+        imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter,String.class, name);
         assertEquals("Expected " + name + "to be deleted but got "+ imageJsonObj + " existing", "Image not found", imageJsonObj);
     }
 

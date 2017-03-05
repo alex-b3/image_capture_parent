@@ -1,36 +1,21 @@
 <html>
 <head>
-<title>stories.get_image</title>
+<title>stories.get_second_image</title>
 <style type="text/css" media="all">
 @import url( "./style/jbehave-core.css" );
 </style>
 </head>
 <body>
-  
-<script type="syntaxhighlighter" class="brush: plain"><![CDATA[
-#org.jbehave.core.reporters.PostStoryStatisticsCollector
-#Sun Mar 05 14:17:32 IST 2017
-duration=571
-notAllowed=0
-examples=0
-scenariosNotAllowed=0
-pending=0
-stepsPending=0
-stepsNotPerformed=0
-scenariosSuccessful=1
-givenStoryScenarios=0
-givenStoryScenariosFailed=0
-stepsFailed=0
-scenarios=1
-givenStories=0
-stepsSuccessful=3
-steps=3
-givenStoryScenariosPending=0
-scenariosPending=0
-stepsIgnorable=0
-givenStoryScenariosNotAllowed=0
-scenariosFailed=0
-givenStoryScenariosSuccessful=0
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(stories/get_second_image.story)
+Scenario: scenario description
+Given Existing Image in DB with name second and source url http://cdn3.thr.com/sites/default/files/imagecache/landscape_928x523/2016/07/south_park_still_h_2016.jpg
+When I am getting image with name second
+Then I am seeing image with name second
+
+
 
 ]]></script>
 </body>

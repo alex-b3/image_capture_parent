@@ -1,3 +1,5 @@
 C:\Users\alex.bichovsky\IdeaProjects\image_capture_parent\service_tests\src\test\java\stories\GetImage.java
 C:\Users\alex.bichovsky\IdeaProjects\image_capture_parent\service_tests\src\test\java\stories\GetSecondImage.java
-C:\Users\alex.bichovsky\IdeaProjects\image_capture_parent\service_tests\src\test\java\com\GetImageSteps.java
+C:\Users\alex.bichovsky\IdeaProjects\image_capture_parent\service_tests\src\test\java\com\service\JsonService.java
+C:\Users\alex.bichovsky\IdeaProjects\image_capture_parent\service_tests\src\test\java\com\steps\GetImageSteps.java
+C:\Users\alex.bichovsky\IdeaProjects\image_capture_parent\service_tests\src\test\java\consts\RequestConsts.java

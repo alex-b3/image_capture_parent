@@ -16,7 +16,7 @@
             <groupId>image_capture_parent</groupId>
             <artifactId>image_capture</artifactId>
             <!--<type>test-jar</type>-->
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>

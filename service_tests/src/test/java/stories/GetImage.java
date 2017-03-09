@@ -1,6 +1,6 @@
 package stories;
 
-import com.GetImageSteps;
+import com.steps.GetImageSteps;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.junit.JUnitStory;
 import org.jbehave.core.reporters.StoryReporterBuilder;

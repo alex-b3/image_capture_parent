@@ -1,5 +1,0 @@
-com\controllers\ImageController.class
-com\models\Image.class
-com\models\ImageDao.class
-com\services\ImageService.class
-com\Application.class

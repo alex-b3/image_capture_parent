@@ -29,15 +29,11 @@ public class Image {
     @NotNull
     private String localPath;
 
-    public Image(){}
-
     public Image(long id){
         this.id = id;
     }
 
-    public Image(String url){
-        this.url = url;
-    }
+    public Image(){}
 
     public long getId() {
         return id;
@@ -78,5 +74,4 @@ public class Image {
     public void setLocalPath(String localPath) {
         this.localPath = localPath;
     }
-
 }

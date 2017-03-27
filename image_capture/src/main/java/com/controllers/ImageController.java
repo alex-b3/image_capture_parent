@@ -1,11 +1,8 @@
 package com.controllers;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.models.Image;
-import com.models.ImageDao;
+import com.models.ImageClient;
 import com.services.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,19 +19,14 @@ import java.io.IOException;
 @Controller
 public class ImageController {
 
-    ObjectMapper mapper = new ObjectMapper();
-
     /**
      * POST /create  --> Create a new user and save it in the database.
      */
     @RequestMapping(value = "/capture", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity<?> create(@RequestBody Image image) throws IOException {
-            if(imageService.takeImage(image)){
-                imageDao.save(image);
-                return new ResponseEntity<Image>(image, HttpStatus.OK);
-            }
-            return new ResponseEntity<String>("Wrong url for the image was provided!!!", HttpStatus.UNPROCESSABLE_ENTITY);
+    public ResponseEntity<?> create(@RequestBody ImageClient image) throws IOException {
+
+        return imageService.takeImage(image);
     }
 
     /**
@@ -43,18 +35,9 @@ public class ImageController {
      */
     @RequestMapping("/get-by-name")
     @ResponseBody
-    public String getByName(String name) {
-        String jsonInString = null;
-        try {
-            Image image = imageDao.findByName(name);
-            if(!image.equals(null)){
-                jsonInString = mapper.writeValueAsString(image);
-            }
-        }
-        catch (Exception ex) {
-            return "Image not found";
-        }
-        return jsonInString;
+    public ResponseEntity<?> getByName(String name) {
+
+        return imageService.getImage(name);
     }
 
     /**
@@ -63,21 +46,10 @@ public class ImageController {
 
     @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
     @ResponseBody
-    public String deleteByName(String name) {
-        String imageName = "";
-        try {
-            Image image = imageDao.findByName(name);
-            imageName = image.getName();
-            imageDao.delete(image);
-        }
-        catch (Exception ex) {
-            return "Image not found";
-        }
-        return imageName + " was deleted";
-    }
+    public ResponseEntity<?> deleteByName(String name) {
 
-    @Autowired
-    private ImageDao imageDao;
+        return imageService.deleteImage(name);
+    }
 
     @Autowired
     private ImageService imageService;

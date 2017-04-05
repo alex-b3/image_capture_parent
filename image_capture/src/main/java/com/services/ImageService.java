@@ -26,7 +26,6 @@ public class ImageService {
     public ResponseEntity<?> takeImage(ImageClient imageClient) throws IOException {
         try{
             if(imageExists(imageClient.getUrl())){
-                //TODO map ImageClient object to Image object
                 imageClient.setLocalPath(saveImage(imageClient.getUrl()));
             }
             else{

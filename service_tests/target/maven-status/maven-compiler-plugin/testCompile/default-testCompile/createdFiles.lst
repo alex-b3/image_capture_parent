@@ -1,5 +1,3 @@
-consts\RequestConsts.class
-stories\GetImage.class
-stories\GetSecondImage.class
 com\steps\GetImageSteps.class
-com\service\JsonService.class
+consts\RequestConsts.class
+com\steps\ApiTestSuite.class

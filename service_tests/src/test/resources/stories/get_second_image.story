@@ -5,7 +5,7 @@ As a user
 I want to perform an action
 So that I can achieve a business goal
 
-Scenario: scenario description
-Given Existing Image in DB with name second and source url http://cdn3.thr.com/sites/default/files/imagecache/landscape_928x523/2016/07/south_park_still_h_2016.jpg
+Scenario: Get second Image
+Given Existing Image in DB with name second and source url https://vignette2.wikia.nocookie.net/southpark/images/c/cd/Naked_Cartman_o.o.png
 When I am getting image with name second
 Then I am seeing image with name second

@@ -14,22 +14,15 @@ import java.io.IOException;
 import static consts.RequestConsts.*;
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by alex.bichovsky on 2/20/2017.
- */
 public class GetImageSteps{
     RestTemplate restTemplate = new RestTemplate();
-    String imageJsonObj = null;
     ImageClient image = new ImageClient();
     ObjectMapper mapper = new ObjectMapper();
     HttpHeaders headers = new HttpHeaders();
 
-
-    // TODO Consider to add Interface for dealing with reusable functions
-
     @Given("Existing Image in DB with name $name and source url $url")
     public void givenImage(@Named("name") String name, @Named("url") String url) throws IOException {
-        imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter, String.class, name);
+        String imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter, String.class, name);
         if(Strings.isNullOrEmpty(imageJsonObj)){
             createNewImage(name, url);
         }else{
@@ -39,7 +32,7 @@ public class GetImageSteps{
 
     @When("I am getting image with name $name")
     public void gettingImageWithName(@Named("name") String name) throws IOException {
-        imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter, String.class, name);
+        String imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter, String.class, name);
         image =  mapper.readValue(imageJsonObj, ImageClient.class);
     }
 
@@ -56,14 +49,14 @@ public class GetImageSteps{
         String jsonInString = mapper.writeValueAsString(image);
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<String> entity = new HttpEntity<String>(jsonInString, headers);
-        imageJsonObj = restTemplate.postForObject(localHost + capture, entity, String.class);
+        String imageJsonObj = restTemplate.postForObject(localHost + capture, entity, String.class);
         image = mapper.readValue(imageJsonObj, ImageClient.class);
     }
 
     @When("I delete image with name $name")
     public void deleteImage(@Named("name")String name){
         restTemplate.delete(localHost + delete + nameParameter, name);
-        imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter, String.class, name);
+        String imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter, String.class, name);
         assertEquals("Expected " + name + " to be deleted but got "+ imageJsonObj + " existing", null, imageJsonObj);
     }
 

@@ -1,8 +1,5 @@
 package consts;
 
-/**
- * Created by alex.bichovsky on 3/5/2017.
- */
 public class RequestConsts {
 
     private RequestConsts() {

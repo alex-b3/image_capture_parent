@@ -2,89 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c50b7768-1ad4-48a9-ad93-6d6c861dcd38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service_tests/src/test/java/com/steps/ApiTestSuite.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__classworlds_classworlds_1_1_alpha_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_dep_4_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_2_0_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_0_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_2_0_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_2_0_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_registry_2_0_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_profile_2_0_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_2_0_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_2_0_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_2_0_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_archiver_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_9_stable_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_io_1_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_19.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_integration_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jbehave_jbehave_core_3_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jbehave_jbehave_maven_plugin_3_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20140107.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/src/test/java/com/service/JsonService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/src/test/java/stories/GetImage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/src/test/java/stories/GetSecondImage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/failsafe-reports/TEST-stories.GetImage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/failsafe-reports/TEST-stories.GetSecondImage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/failsafe-reports/stories.GetImage.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/failsafe-reports/stories.GetSecondImage.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/AfterStories.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/BeforeStories.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/stories.get_image.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/stories.get_second_image.stats" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/stories.get_second_image.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/view/AfterStories.txt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/view/BeforeStories.txt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/view/stories.get_image.txt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/view/stories.get_second_image.stats.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/view/stories.get_second_image.txt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/test-classes/stories/GetImage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service_tests/target/test-classes/stories/GetSecondImage.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_8_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_8_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_8_RELEASE.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_capture/target/image_capture-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/image_capture/target/image_capture-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_capture_client/target/image_capture_client-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/image_capture_client/target/image_capture_client-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/service_tests-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/service_tests/target/service_tests-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/test-classes/com/steps/GetImageSteps.class" afterPath="$PROJECT_DIR$/service_tests/target/test-classes/com/steps/GetImageSteps.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_capture/image_capture.iml" afterPath="$PROJECT_DIR$/image_capture/image_capture.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_capture/pom.xml" afterPath="$PROJECT_DIR$/image_capture/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_capture/src/main/java/com/models/ImageRepository.java" afterPath="$PROJECT_DIR$/image_capture/src/main/java/com/models/ImageRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_capture/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/image_capture/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_capture_client/image_capture_client.iml" afterPath="$PROJECT_DIR$/image_capture_client/image_capture_client.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_capture_client/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/image_capture_client/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/pom.xml" afterPath="$PROJECT_DIR$/service_tests/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/service_tests.iml" afterPath="$PROJECT_DIR$/service_tests/service_tests.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/src/test/java/com/steps/GetImageSteps.java" afterPath="$PROJECT_DIR$/service_tests/src/test/java/com/steps/GetImageSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/src/test/java/consts/RequestConsts.java" afterPath="$PROJECT_DIR$/service_tests/src/test/java/consts/RequestConsts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/src/test/resources/stories/get_image.story" afterPath="$PROJECT_DIR$/service_tests/src/test/resources/stories/get_image.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/src/test/resources/stories/get_second_image.story" afterPath="$PROJECT_DIR$/service_tests/src/test/resources/stories/get_second_image.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/failsafe-reports/failsafe-summary.xml" afterPath="$PROJECT_DIR$/service_tests/target/failsafe-reports/failsafe-summary.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/src/test/java/com/steps/ApiTestSuite.java" afterPath="$PROJECT_DIR$/service_tests/src/test/java/com/steps/ApiTestSuite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/AfterStories.stats" afterPath="$PROJECT_DIR$/service_tests/target/jbehave/AfterStories.stats" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/BeforeStories.stats" afterPath="$PROJECT_DIR$/service_tests/target/jbehave/BeforeStories.stats" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/stories.get_image.stats" afterPath="$PROJECT_DIR$/service_tests/target/jbehave/stories.get_image.stats" />
@@ -94,10 +17,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/service_tests/target/jbehave/view/reports.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/jbehave/view/stories.get_image.stats.html" afterPath="$PROJECT_DIR$/service_tests/target/jbehave/view/stories.get_image.stats.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/service_tests/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/service_tests/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/service_tests/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/test-classes/stories/get_image.story" afterPath="$PROJECT_DIR$/service_tests/target/test-classes/stories/get_image.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_tests/target/test-classes/stories/get_second_image.story" afterPath="$PROJECT_DIR$/service_tests/target/test-classes/stories/get_second_image.story" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -154,25 +73,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_second_image.story" pinned="false" current-in-tab="true">
+      <file leaf-file-name="get_second_image.story" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service_tests/src/test/resources/stories/get_second_image.story">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiTestSuite.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ApiTestSuite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service_tests/src/test/java/com/steps/ApiTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="25" />
-              <folding>
-                <element signature="e#159#160#0" expanded="true" />
-                <element signature="e#219#220#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="189">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -249,10 +165,10 @@
         <option value="$PROJECT_DIR$/image_capture/src/main/java/com/controllers/ImageController.java" />
         <option value="$PROJECT_DIR$/service_tests/pom.xml" />
         <option value="$PROJECT_DIR$/service_tests/src/test/java/com/steps/GetImageSteps.java" />
-        <option value="$PROJECT_DIR$/service_tests/src/test/java/com/steps/ApiTestSuite.java" />
         <option value="$PROJECT_DIR$/service_tests/src/test/java/consts/RequestConsts.java" />
         <option value="$PROJECT_DIR$/service_tests/src/test/resources/stories/get_image.story" />
         <option value="$PROJECT_DIR$/service_tests/src/test/resources/stories/get_second_image.story" />
+        <option value="$PROJECT_DIR$/service_tests/src/test/java/com/steps/ApiTestSuite.java" />
       </list>
     </option>
   </component>
@@ -1101,7 +1017,7 @@
       <workItem from="1499074169210" duration="2803000" />
       <workItem from="1501422603677" duration="18974000" />
       <workItem from="1501678375936" duration="405000" />
-      <workItem from="1502012139377" duration="329000" />
+      <workItem from="1502012139377" duration="820000" />
     </task>
     <servers />
   </component>
@@ -1138,7 +1054,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213972000" />
+    <option name="totallyTimeSpent" value="214463000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1150,7 +1066,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2409" y="-9" width="2418" height="1468" extended-state="7" />
+    <frame x="-2409" y="-9" width="2418" height="1468" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1493,17 +1409,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service_tests/src/test/java/com/service/JsonService.java" />
-    <entry file="file://$PROJECT_DIR$/service_tests/src/test/java/com/steps/ApiTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service_tests/src/test/java/consts/RequestConsts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1541,7 +1446,15 @@
     <entry file="file://$PROJECT_DIR$/service_tests/src/test/resources/stories/get_second_image.story">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service_tests/src/test/java/com/steps/ApiTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

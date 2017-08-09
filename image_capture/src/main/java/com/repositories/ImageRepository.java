@@ -1,5 +1,6 @@
-package com.models;
+package com.repositories;
 
+import com.models.ImageModel;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;

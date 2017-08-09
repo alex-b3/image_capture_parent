@@ -1,8 +1,7 @@
 package com.services;
 
-import com.models.Image;
 import com.models.ImageModel;
-import com.models.ImageRepository;
+import com.repositories.ImageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,7 +1,7 @@
 package com.services;
 
 import com.models.Image;
-import com.models.ImageClient;
+import com.models.ImageModel;
 import com.models.ImageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,10 +23,10 @@ import java.net.URL;
 @Component
 public class ImageService {
 
-    public ResponseEntity<?> takeImage(ImageClient imageClient) throws IOException {
+    public ResponseEntity<?> takeImage(ImageModel image) throws IOException {
         try{
-            if(imageExists(imageClient.getUrl())){
-                imageClient.setLocalPath(saveImage(imageClient.getUrl()));
+            if(imageExists(image.getUrl())){
+                image.setLocalPath(saveImage(image.getUrl()));
             }
             else{
                 return new ResponseEntity<String>("Wrong url for the image was provided!!!", HttpStatus.UNPROCESSABLE_ENTITY);
@@ -35,8 +35,8 @@ public class ImageService {
             throw e;
         }
 
-        imageRepository.save(clientToImageConverter(imageClient));
-        return new ResponseEntity<ImageClient>(imageClient, HttpStatus.OK);
+        imageRepository.save(image);
+        return new ResponseEntity<ImageModel>(image, HttpStatus.OK);
     }
 
     private boolean imageExists(String URLName) throws IOException {
@@ -71,46 +71,28 @@ public class ImageService {
     }
 
     public ResponseEntity<?> getImage(String name) {
-        ImageClient imageClient = new ImageClient();
-
+        ImageModel image;
         try {
-            Image image = imageRepository.findByName(name);
-            if(!image.equals(null)){
-                imageClient = imageToClioentConverter(image);
-            }
+            image = imageRepository.findByName(name);
         }
         catch (Exception ex) {
             return new ResponseEntity<String>("No Image with this name was found!!!", HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<ImageClient>(imageClient, HttpStatus.OK);
+        return new ResponseEntity<ImageModel>(image, HttpStatus.OK);
     }
 
     public ResponseEntity<?> deleteImage(String name) {
 
-        //TODO map ImageClient object to Image object before deleting
-        ImageClient imageClient;
+        //TODO map ImageModel object to Image object before deleting
+        ImageModel image;
         try {
-            Image image = imageRepository.findByName(name);
-            imageClient = imageToClioentConverter(image);
+            image = imageRepository.findByName(name);
             imageRepository.delete(image);
         }
         catch (Exception ex) {
             return new ResponseEntity<String>("Image was not found!!!", HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<ImageClient>(imageClient, HttpStatus.OK);
-    }
-
-    private Image clientToImageConverter(ImageClient imageClient){
-        Image image = new Image();
-        image.setName(imageClient.getName());
-        image.setUrl(imageClient.getUrl());
-        image.setLocalPath(imageClient.getLocalPath());
-        return image;
-    }
-
-    private ImageClient imageToClioentConverter(Image image){
-        ImageClient imageClient = new ImageClient(image.getId(), image.getName(), image.getDate(), image.getUrl(), image.getLocalPath());
-        return imageClient;
+        return new ResponseEntity<ImageModel>(image, HttpStatus.OK);
     }
 
     @Autowired

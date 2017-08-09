@@ -8,7 +8,7 @@ import javax.transaction.Transactional;
  * Created by alex.bichovsky on 2/13/2017.
  */
 @Transactional
-public interface ImageRepository extends CrudRepository<Image, Long>{
+public interface ImageRepository extends CrudRepository<ImageModel, Long>{
 
-    public Image findByName(String name);
+    public ImageModel findByName(String name);
 }

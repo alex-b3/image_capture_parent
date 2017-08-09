@@ -2,7 +2,7 @@ package com.steps;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Strings;
-import com.models.ImageClient;
+import com.models.ImageModel;
 import org.jbehave.core.annotations.*;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -16,7 +16,7 @@ import static org.junit.Assert.assertEquals;
 
 public class GetImageSteps{
     RestTemplate restTemplate = new RestTemplate();
-    ImageClient image = new ImageClient();
+    ImageModel image = new ImageModel();
     ObjectMapper mapper = new ObjectMapper();
     HttpHeaders headers = new HttpHeaders();
 
@@ -26,14 +26,14 @@ public class GetImageSteps{
         if(Strings.isNullOrEmpty(imageJsonObj)){
             createNewImage(name, url);
         }else{
-            image = mapper.readValue(imageJsonObj, ImageClient.class);
+            image = mapper.readValue(imageJsonObj, ImageModel.class);
         }
     }
 
     @When("I am getting image with name $name")
     public void gettingImageWithName(@Named("name") String name) throws IOException {
         String imageJsonObj = restTemplate.getForObject(localHost + getByName + nameParameter, String.class, name);
-        image =  mapper.readValue(imageJsonObj, ImageClient.class);
+        image =  mapper.readValue(imageJsonObj, ImageModel.class);
     }
 
     @Then("I am seeing image with name $name")
@@ -50,7 +50,7 @@ public class GetImageSteps{
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<String> entity = new HttpEntity<String>(jsonInString, headers);
         String imageJsonObj = restTemplate.postForObject(localHost + capture, entity, String.class);
-        image = mapper.readValue(imageJsonObj, ImageClient.class);
+        image = mapper.readValue(imageJsonObj, ImageModel.class);
     }
 
     @When("I delete image with name $name")

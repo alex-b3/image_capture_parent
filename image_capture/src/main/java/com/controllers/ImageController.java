@@ -1,6 +1,6 @@
 package com.controllers;
 
-import com.models.ImageClient;
+import com.models.ImageModel;
 import com.services.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +24,7 @@ public class ImageController {
      */
     @RequestMapping(value = "/capture", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity<?> create(@RequestBody ImageClient image) throws IOException {
+    public ResponseEntity<?> create(@RequestBody ImageModel image) throws IOException {
 
         return imageService.takeImage(image);
     }

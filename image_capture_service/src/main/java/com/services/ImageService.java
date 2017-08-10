@@ -16,9 +16,6 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 
-/**
- * Created by alex.bichovsky on 2/13/2017.
- */
 @Component
 public class ImageService {
 

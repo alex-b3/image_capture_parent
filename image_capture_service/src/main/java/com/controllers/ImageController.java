@@ -12,10 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.io.IOException;
 
-/**
- * Created by alex.bichovsky on 2/13/2017.
- */
-
 @Controller
 public class ImageController {
 

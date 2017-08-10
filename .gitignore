@@ -4,3 +4,5 @@ image_capture_service/target/*
 image_capture_tests/target/*
 image_capture_parent/image_capture_tests/image_capture_tests.iml
 image_capture_parent/image_capture_service/image_capture_service.iml
+image_capture_parent.iml
+image_project_root.iml

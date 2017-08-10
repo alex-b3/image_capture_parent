@@ -4,9 +4,6 @@ import javax.validation.constraints.NotNull;
 import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by alex.bichovsky on 3/22/2017.
- */
 @Entity
 @Table(name = "images",
         uniqueConstraints = @UniqueConstraint(columnNames = {"name"}))

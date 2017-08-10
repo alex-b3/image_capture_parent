@@ -1,0 +1,4 @@
+.idea/*
+image_capture_client/target/*
+image_capture_service/target/*
+image_capture_tests/target/*

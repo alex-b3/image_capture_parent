@@ -10,22 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>image_capture_client</module>
-        <module>image_capture</module>
-        <module>service_tests</module>
+        <module>image_capture_service</module>
+        <module>image_capture_tests</module>
     </modules>
-    <!--<parent>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-parent</artifactId>-->
-        <!--<version>1.5.1.RELEASE</version>-->
-        <!--<relativePath />-->
-    <!--</parent>-->
-
-    <!--<build>-->
-        <!--<plugins>-->
-            <!--<plugin>-->
-                <!--<groupId>org.springframework.boot</groupId>-->
-                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
-            <!--</plugin>-->
-        <!--</plugins>-->
-    <!--</build>-->
 </project>
